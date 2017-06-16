@@ -14,6 +14,12 @@ public class ControladorPasaje {
     
     Users usuarios[] = new Users[3];
     
-    usuarios[1] = new Users("admin", "admin", true);
-    
+   public ControladorPasaje(){
+    usuarios[0] = new Users("admin", "admin", true);
+    usuarios[1] = new Users("julio1", "123", true);
+    usuarios[2] = new Users("julio2", "123", true);
+}
+    public boolean logIn(String usu, String pass){
+        return true; //do stuff
+    }
 }
