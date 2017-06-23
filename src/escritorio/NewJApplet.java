@@ -17,7 +17,7 @@ import java.util.*;
  * @author Julio
  */
 public class NewJApplet extends JApplet implements  ActionListener {
-<<<<<<< HEAD
+
 
     
     private ControladorPasaje contP = new ControladorPasaje(); 
@@ -41,18 +41,10 @@ public class NewJApplet extends JApplet implements  ActionListener {
 
     }
   
-       
-    public void init() {
-=======
- 
-   private final ControladorPasaje contP = new ControladorPasaje(); 
-   JLabel usuario,pass;
-   JTextField campoUsuario, campoPass;
-   JButton botonLogin, botonCancel;
    
     
        public void init() {
->>>>>>> origin/master
+
        Container contenedor = getContentPane();
        contenedor.setLayout(new FlowLayout());
        usuario = new JLabel("Usuario: ");
@@ -81,11 +73,9 @@ public class NewJApplet extends JApplet implements  ActionListener {
             JOptionPane.showMessageDialog(this,"no");//error
         }
     }else{
-<<<<<<< HEAD
+
             JOptionPane.showMessageDialog(this,"1111111111");//quit
-=======
-            //quit
->>>>>>> origin/master
+
             }
         
     }
