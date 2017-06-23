@@ -17,10 +17,29 @@ import negocio.ControladorPasaje;
  */
 public class NewJApplet extends JApplet implements  ActionListener {
 
-   private ControladorPasaje contP = new ControladorPasaje(); 
+    
+    private ControladorPasaje contP = new ControladorPasaje(); 
+   
    JLabel usuario,pass;
    JTextField campoUsuario, campoPass;
    JButton botonLogin, botonCancel;
+    
+    
+    public static void main(String[] args) {
+        
+        NewJApplet parcial =new NewJApplet();
+        JFrame myFrame=new JFrame("pasajes");
+        myFrame.add(parcial);
+        myFrame.pack();
+        myFrame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE ); 
+        myFrame.setSize( 1080, 800 ); 
+        myFrame.setVisible(true);
+        parcial.init();
+
+
+    }
+  
+       
     public void init() {
        Container contenedor = getContentPane();
        contenedor.setLayout(new FlowLayout());
@@ -50,7 +69,7 @@ public class NewJApplet extends JApplet implements  ActionListener {
             JOptionPane.showMessageDialog(this,"jajajajajaj");//error
         }
     }else{
-            JOptionPane.showMessageDialog(this,"aseaseaseaseas");//quit
+            JOptionPane.showMessageDialog(this,"1111111111");//quit
             }
         
     }

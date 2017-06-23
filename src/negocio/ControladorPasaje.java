@@ -14,6 +14,7 @@ public class ControladorPasaje {
     
     Users usuarios[] = new Users[3];
     
+    
    public ControladorPasaje(){
     usuarios[0] = new Users("admin", "admin", true);
     usuarios[1] = new Users("julio1", "123", true);
