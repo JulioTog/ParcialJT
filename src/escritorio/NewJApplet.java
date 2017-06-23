@@ -10,12 +10,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.*;
 import negocio.ControladorPasaje;
+import java.util.*;
 
 /**
  *
  * @author Julio
  */
 public class NewJApplet extends JApplet implements  ActionListener {
+<<<<<<< HEAD
 
     
     private ControladorPasaje contP = new ControladorPasaje(); 
@@ -41,14 +43,24 @@ public class NewJApplet extends JApplet implements  ActionListener {
   
        
     public void init() {
+=======
+ 
+   private final ControladorPasaje contP = new ControladorPasaje(); 
+   JLabel usuario,pass;
+   JTextField campoUsuario, campoPass;
+   JButton botonLogin, botonCancel;
+   
+    
+       public void init() {
+>>>>>>> origin/master
        Container contenedor = getContentPane();
        contenedor.setLayout(new FlowLayout());
        usuario = new JLabel("Usuario: ");
        contenedor.add(usuario);
-       pass = new JLabel("Password: ");
-       contenedor.add(pass);
        campoUsuario = new JTextField(20);
        contenedor.add(campoUsuario);
+       pass = new JLabel("Password: ");
+       contenedor.add(pass);
        campoPass = new JTextField(20);
        contenedor.add(campoPass);
        botonLogin = new JButton("Login");
@@ -64,15 +76,19 @@ public class NewJApplet extends JApplet implements  ActionListener {
     public void actionPerformed(ActionEvent actionEvent){
         if(actionEvent.getSource()== botonLogin){
         if(contP.logIn(campoUsuario.getText(), campoPass.getText())){
-            JOptionPane.showMessageDialog(this,"aseaseaseaseas");//Succes
+            JOptionPane.showMessageDialog(this,"login");//Succes
         }else{
-            JOptionPane.showMessageDialog(this,"jajajajajaj");//error
+            JOptionPane.showMessageDialog(this,"no");//error
         }
     }else{
+<<<<<<< HEAD
             JOptionPane.showMessageDialog(this,"1111111111");//quit
+=======
+            //quit
+>>>>>>> origin/master
             }
         
     }
 
-    // TODO overwrite start(), stop() and destroy() methods
-}
+} // TODO overwrite start(), stop() and destroy() methods
+
