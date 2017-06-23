@@ -19,4 +19,10 @@ public class Users {
         this.pass = pass;
         this.isAdmin = isAdmin;
     }
+    public String getIdUser (){
+        return idUser;
+    }
+    public String getPass (){
+        return pass;
+    }
 }
